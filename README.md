@@ -1,30 +1,30 @@
-# 📌 مكتبة رمز الريال السعودي
+# 📌 Saudi Riyal Symbol Library
 
-🚀 **مكتبة مرنة وسهلة الاستخدام لعرض رمز الريال السعودي (`SAR`) في صفحات الويب مع خيارات تخصيص متقدمة!**
+🚀 **A flexible and easy-to-use library for displaying the Saudi Riyal symbol (`SAR`) in web pages with advanced customization options!**
 
 ---
 
-## 📖 كيفية الاستخدام
+## 📖 How to Use
 
-### 1️⃣ تضمين المكتبة في مشروعك
-أضف ملف `ryal-symbol.js` إلى مشروعك:
+### 1️⃣ Include the library in your project
+Add the `ryal-symbol.js` file to your project:
 ```html
 <script src="library/ryal-symbol.js"></script>
 ```
 
-### 2️⃣ إضافة عنصر HTML لعرض الرمز
+### 2️⃣ Add an HTML element to display the symbol
 ```html
 <span id="ryal-symbol"></span>
 ```
 
-### 3️⃣ تضمين ملف التنسيق (اختياري)
-للحصول على تصميم أفضل، أضف `style.css`:
+### 3️⃣ Include the stylesheet (optional)
+For a better design, add `style.css`:
 ```html
 <link rel="stylesheet" href="test/style.css">
 ```
 
-### 4️⃣ استدعاء وظيفة `createRyalSymbol`
-قم بإنشاء رمز الريال السعودي باستخدام:
+### 4️⃣ Call the `createRyalSymbol` function
+Create the Saudi Riyal symbol using:
 ```javascript
 createRyalSymbol("ryal-symbol", {
     type: "new",
@@ -36,24 +36,24 @@ createRyalSymbol("ryal-symbol", {
 
 ---
 
-## ⚙️ خيارات التخصيص
+## ⚙️ Customization Options
 
-| **الخاصية**  | **الوصف**  | **القيم المتاحة**  |
+| **Property**  | **Description**  | **Available Values**  |
 |-------------|------------|------------------|
-| `type` | تحديد نوع الرمز | `"new"` (الرمز الجديد) أو `"old"` (الرمز القديم `SAR`) |
-| `color` | لون الرمز | أي قيمة ألوان صالحة (مثل `"green"`, `"#FF5733"`) |
-| `fontSize` | حجم الخط للرمز | أي حجم خط صالح (`"2em"`, `"16px"`, `"larger"`) |
-| `animation` | حركة الرمز | `"rotate"`, `"pulse"`, `"blink"`, `"shake"`, `"fade"` |
-| `effect` | تأثير بصري إضافي | `"pulse"`, `"blink"`, `"shake"`, `"fade"` |
-| `element` | نوع العنصر الحاوي للرمز | `"span"`, `"button"`, `"div"` |
-| `className` | فئة CSS مخصصة | اسم الفئة CSS |
-| `shadow` | تأثير الظل | مثال: `"0 4px 8px rgba(0, 0, 0, 0.2)"` |
+| `type` | Specifies the type of symbol | `"new"` (new symbol) or `"old"` (old symbol `SAR`) |
+| `color` | Symbol color | Any valid color value (e.g., `"green"`, `"#FF5733"`) |
+| `fontSize` | Symbol font size | Any valid font size (`"2em"`, `"16px"`, `"larger"`) |
+| `animation` | Symbol animation | `"rotate"`, `"pulse"`, `"blink"`, `"shake"`, `"fade"` |
+| `effect` | Additional visual effect | `"pulse"`, `"blink"`, `"shake"`, `"fade"` |
+| `element` | Type of element containing the symbol | `"span"`, `"button"`, `"div"` |
+| `className` | Custom CSS class | CSS class name |
+| `shadow` | Shadow effect | Example: `"0 4px 8px rgba(0, 0, 0, 0.2)"` |
 
 ---
 
-## 🛠️ أمثلة عملية
+## 🛠️ Practical Examples
 
-### 🔹 رمز باللون الأخضر وحجم 2em مع دوران وتأثير النبض
+### 🔹 Symbol in green with a size of 2em with rotation and pulse effect
 ```javascript
 createRyalSymbol("ryal-symbol", {
     type: "new",
@@ -64,7 +64,7 @@ createRyalSymbol("ryal-symbol", {
 });
 ```
 
-### 🔹 رمز قديم (SAR) باللون الأزرق
+### 🔹 Old symbol (SAR) in blue
 ```javascript
 createRyalSymbol("ryal-symbol", {
     type: "old",
@@ -72,7 +72,7 @@ createRyalSymbol("ryal-symbol", {
 });
 ```
 
-### 🔹 رمز داخل زر مع فئة CSS مخصصة
+### 🔹 Symbol inside a button with a custom CSS class
 ```javascript
 createRyalSymbol("ryal-symbol", {
     type: "new",
@@ -81,7 +81,7 @@ createRyalSymbol("ryal-symbol", {
 });
 ```
 
-### 🔹 رمز مع تأثير الظل
+### 🔹 Symbol with shadow effect
 ```javascript
 createRyalSymbol("ryal-symbol", {
     type: "new",
@@ -91,20 +91,20 @@ createRyalSymbol("ryal-symbol", {
 
 ---
 
-## ✨ قائمة التأثيرات المدعومة
+## ✨ List of Supported Effects
 
-| **التأثير** | **الوصف**  |
+| **Effect** | **Description**  |
 |------------|------------|
-| `pulse` | تأثير النبض |
-| `blink` | تأثير الوميض |
-| `shake` | تأثير الاهتزاز |
-| `fade` | تأثير التلاشي |
+| `pulse` | Pulse effect |
+| `blink` | Blink effect |
+| `shake` | Shake effect |
+| `fade` | Fade effect |
 
 ---
 
-## 📢 ملاحظات هامة
-✔ **متوافق مع جميع المتصفحات الحديثة.**  
-✔ **يمكن دمجه بسهولة مع مشاريع HTML و JavaScript.**  
-✔ **مصمم ليكون خفيف الوزن وسريع التحميل.**  
+## 📢 Important Notes
+✔ **Compatible with all modern browsers.**  
+✔ **Easily integrated with HTML and JavaScript projects.**  
+✔ **Designed to be lightweight and fast loading.**  
 
-🔗 **للمزيد من التفاصيل، راجع كود المصدر!** 🚀
+🔗 **For more details, see the source code!** 🚀
