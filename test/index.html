@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة رمز الريال السعودي - واجهة المنتجات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مكتبة رمز الريال السعودي</h1>
+        <p>أمثلة على استخدام المكتبة:</p>
+
+        <div class="example">
+            <h2>الرمز الجديد (الافتراضي)</h2>
+            <span id="ryal-symbol-new"></span>
+        </div>
+
+        <div class="example">
+            <h2>الرمز القديم (SAR)</h2>
+            <span id="ryal-symbol-old"></span>
+        </div>
+
+        <div class="example">
+            <h2>الرمز باللون الأخضر</h2>
+            <span id="ryal-symbol-color"></span>
+        </div>
+
+        <div class="example">
+            <h2>الرمز بحجم 1.5em</h2>
+            <span id="ryal-symbol-size"></span>
+        </div>
+
+        <div class="example">
+            <h2>الرمز مع حركة دوران</h2>
+            <span id="ryal-symbol-rotate"></span>
+        </div>
+
+        <div class="example">
+            <h2>الرمز مع تأثير النبض</h2>
+            <span id="ryal-symbol-pulse"></span>
+        </div>
+
+        <div class="example">
+            <h2>الرمز مع تأثير التلاشي</h2>
+            <span id="ryal-symbol-fade"></span>
+        </div>
+
+        <div class="example">
+            <h2>الرمز مع تأثير الظل</h2>
+            <span id="ryal-symbol-shadow"></span>
+        </div>
+
+        <div class="example">
+            <h2>الرمز داخل زر مع فئة CSS مخصصة</h2>
+            <button id="ryal-symbol-button"></button>
+        </div>
+    </div>
+
+    <script src="../library/ryal-symbol.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            createRyalSymbol("ryal-symbol-new", {});
+            createRyalSymbol("ryal-symbol-old", { type: "old" });
+            createRyalSymbol("ryal-symbol-color", { color: "green" });
+            createRyalSymbol("ryal-symbol-size", { fontSize: "1.5em" });
+            createRyalSymbol("ryal-symbol-rotate", { animation: "rotate" });
+            createRyalSymbol("ryal-symbol-pulse", { effect: "pulse" });
+            createRyalSymbol("ryal-symbol-fade", { effect: "fade" });
+            createRyalSymbol("ryal-symbol-shadow", { shadow: "0 4px 8px rgba(0, 0, 0, 0.2)" });
+            createRyalSymbol("ryal-symbol-button", {
+                element: "button",
+                className: "custom-style"
+            });
+        });
+    </script>
+</body>
+</html>
